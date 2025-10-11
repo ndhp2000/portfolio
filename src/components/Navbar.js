@@ -3,7 +3,6 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
-import { ImBlog } from "react-icons/im";
 import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
@@ -11,6 +10,7 @@ import {
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
+import { MdArticle } from "react-icons/md";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -78,20 +78,20 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/resume"
+                to="/publication"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                <MdArticle style={{ marginBottom: "2px" }} /> Publications
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
               <Nav.Link
-                href="https://soumyajitblogs.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
+                as={Link}
+                to="/resume"
+                onClick={() => updateExpanded(false)}
               >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
+                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
               </Nav.Link>
             </Nav.Item>
           </Nav>

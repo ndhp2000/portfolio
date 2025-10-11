@@ -12,7 +12,7 @@ function Dance() {
         justifyContent: "center",
         gap: "15px"
       }}>
-        <span>My <strong className="purple">Dance</strong></span>
+        <span>My <strong className="main-name">Dance</strong></span>
         <a
           href="https://www.instagram.com/tiny__camel/?hl=en"
           target="_blank"

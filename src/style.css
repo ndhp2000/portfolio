@@ -11,7 +11,7 @@ html {
     rgba(0, 30, 15, 0.95)
   );
 
-  --imp-text-color: #00ff88;
+  --imp-text-color: #0dac62;
 }
 
 .purple {
@@ -170,7 +170,7 @@ button:focus {
 }
 
 .navbar-nav .nav-link {
-  color: #64d496 !important;
+  color: #6ed99e !important;
   font-family: "Exo 2", sans-serif !important;
   font-weight: 600 !important;
   font-size: 1.1em !important;
@@ -209,7 +209,7 @@ button:focus {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #00ff88;
+  background: #05b965;
   box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
   bottom: 1px;
   left: 0;
@@ -305,8 +305,8 @@ button:focus {
 }
 
 .main-name {
-  color: #00ff88;
-  text-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
+  color: #25da86;
+  text-shadow: 0 0 20px rgba(19, 211, 121, 0.5);
 }
 
 .Typewriter__wrapper {
@@ -348,6 +348,7 @@ button:focus {
   position: relative;
   padding-bottom: 70px !important;
   padding-top: 70px !important;
+  background-image: var(--section-background-color) !important;
 }
 
 .home-about-description {
