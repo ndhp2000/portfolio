@@ -1,6 +1,5 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { ImPointRight } from "react-icons/im";
 
 function AboutCard() {
   return (
@@ -8,33 +7,22 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Soumyajit Behera </span>
-            from <span className="purple"> Bhubaneswar, India.</span>
-            <br />
-            I am currently employed as a software developer at Juspay.
-            <br />
-            I have completed Integrated MSc (IMSc) in Maths and Computing at BIT
-            Mesra.
+            Hi Everyone, I am <span className="purple">Nguyen Dinh Hoang Phuc </span>
+            from <span className="purple"> Ho Chi Minh City, Vietnam.</span>
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            I have been working as <span className="purple">Product Software Engineer</span> at Anduin Transactions for <span className="purple">3 years</span>.            <br />
+            <br />
+            I graduated
+            <b className="purple"> 2nd </b>
+            in the <span className="purple"> Honor Program </span> (a <span className="purple">selective track</span> for the top 60 students) in Information Technology at the University of Science, Vietnam National University Ho Chi Minh City.
+            <br />
+            <br />
+            Apart from programming, some other activities that I love to dance!
           </p>
-          <ul>
-            <li className="about-activity">
-              <ImPointRight /> Playing Games
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Travelling
-            </li>
-          </ul>
-
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
+            "Think less, do more!"{" "}
           </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
         </blockquote>
       </Card.Body>
     </Card>
