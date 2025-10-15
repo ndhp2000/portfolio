@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import Preloader from "../src/components/Pre";
 import Navbar from "./components/Navbar";
-import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
+import Activities from "./components/Activities/Activities";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
 import Publication from "./components/Publication/Publication";
@@ -36,8 +36,9 @@ function App() {
         <Navbar />
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<About />} />
           <Route path="/project" element={<Projects />} />
+          <Route path="/activities" element={<Activities />} />
           <Route path="/about" element={<About />} />
           <Route path="/publication" element={<Publication />} />
           <Route path="/resume" element={<Resume />} />

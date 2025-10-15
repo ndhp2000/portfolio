@@ -5,10 +5,9 @@ import { AiFillInstagram } from "react-icons/ai";
 function Dance() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-      <h1 className="project-heading" style={{ 
-        paddingBottom: "20px", 
-        display: "flex", 
-        alignItems: "center", 
+      <h1 className="project-heading" style={{
+        display: "flex",
+        alignItems: "center",
         justifyContent: "center",
         gap: "15px"
       }}>
@@ -27,6 +26,18 @@ function Dance() {
           <AiFillInstagram />
         </a>
       </h1>
+
+      <p
+        style={{
+          color: "#ffffff",
+          fontSize: "1.2em",
+          opacity: 0.8,
+          maxWidth: "600px",
+          margin: "0 auto"
+        }}
+      >
+        Follow me on Instagram!!!
+      </p>
 
       <Row className="justify-content-center" style={{ paddingTop: "20px" }}>
         <Col md={5} className="dance-video-col">

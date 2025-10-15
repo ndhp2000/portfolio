@@ -180,6 +180,14 @@ button:focus {
   padding-left: 1rem !important;
 }
 
+.active-nav-link {
+  color: #00ff88 !important;
+  background: rgba(13, 172, 98, 0.1) !important;
+  border-radius: 8px !important;
+  text-shadow: 0 0 8px rgba(0, 255, 136, 0.8) !important;
+  font-weight: 700 !important;
+}
+
 .nav-link {
   padding: 0.8rem 1rem !important;
 }
@@ -260,7 +268,7 @@ button:focus {
 }
 
 .home-header {
-  padding-top: 80px !important;
+  padding-top: 120px !important;
 }
 
 .home-section {
@@ -289,19 +297,20 @@ button:focus {
 }
 
 .heading-name {
-  font-size: 2.5em !important;
+  font-size: 2.2em !important;
   font-family: "Orbitron", sans-serif !important;
-  font-weight: 700 !important;
+  font-weight: 600 !important;
   letter-spacing: 1.5px !important;
   padding-left: 45px !important;
 }
 
 .heading-sub {
-  font-size: 1.9em !important;
+  font-size: 1.5em !important;
   font-family: "Orbitron", sans-serif !important;
   font-weight: 400 !important;
   letter-spacing: 1.3px !important;
   padding-left: 45px !important;
+  padding-right: 10px !important;
 }
 
 .main-name {
@@ -541,8 +550,11 @@ button:focus {
 
 .card-img-top {
   padding: 20px !important;
-  opacity: 0.8 !important;
+  opacity: 1 !important;
   border-radius: 10px !important;
+  height: 250px !important;
+  object-fit: cover !important;
+  width: 100% !important;
 }
 
 .blog-img {
@@ -583,7 +595,7 @@ button:focus {
 
 .about-section {
   position: relative !important;
-  padding-top: 150px !important;
+  padding-top: 80px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
   color: white !important;

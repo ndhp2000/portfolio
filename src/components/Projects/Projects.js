@@ -2,12 +2,14 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+
+import investorDataManagement from "../../Assets/Projects/IDM.png";
+import investorAccess from "../../Assets/Projects/IA.png";
+import brandedLandingPage from "../../Assets/Projects/landingpage.png";
+import zacingGame from "../../Assets/Projects/zacing-game.png";
+import seamCarving from "../../Assets/Projects/seam-carving.jpeg";
+import smartAnnotation from "../../Assets/Projects/smart-annotation.png";
+import llpHealth from "../../Assets/Projects/llphealth.png";
 
 function Projects() {
   return (
@@ -20,74 +22,102 @@ function Projects() {
         <p style={{ color: "white" }}>
           Here are a few projects I've worked on.
         </p>
-        
+
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={brandedLandingPage}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Branded Landing Page"
+              description="A platform that enables general partners to create fully customizable web pages to showcase their brand, funds, and limited partner–specific content. It includes a page management dashboard, granular access control for limited partners, support for custom domains, and shareable page links. All customized pages are encoded and decoded using Protobuf and securely stored on Amazon S3."
+              demoLink="https://anduin.helpjuice.com/en_US/branded-landing-page/page-inspiration-guide-build-content-that-serves-your-different-needs"
+              productLink="https://anduintransact.com/solutions/anduin-engagement-hub"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={investorDataManagement}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Investor Data Management"
+              description="The platform that centralizes all investor data to streamline subscriptions, automate compliance checks, and improve post-close interactions. I owned key parts of the system, including Contact Management, which allows General Partners to manage firm contacts and related entities such as contact matrices and investment entities, and Document Request, which provides workflows for requesting and tracking documents from Limited Partners. I developed complex logic for permissions and object relationships, and optimized dashboards to enhance both scalability and user experience."
+              demoLink="https://anduin.helpjuice.com/en_US/investor-data-management/set-up-a-contact-matrix-across-entities-vehicles"
+              productLink="https://anduintransact.com/solutions/anduin-investor-data-management"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={investorAccess}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Investor Access"
+              description="An application for Limited Partners to manage their profiles (over 500 data points), documents, and investments, featuring streamlined workflows for quick fund subscriptions, submitting requested documents, and automatic data synchronization."
+              productLink="https://anduintransact.com/solutions/anduin-investor-access"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={smartAnnotation}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Intelligent Annotation System With Semi Automatic Assistance"
+              description="An intelligent annotation system that leverages deep learning for semi-automatic object labeling, integrates a human-in-the-loop process to continuously improve model accuracy, and supports distributed computation through user-shared resources. Built with React, Go, and Python on a scalable microservice architecture using gRPC, Docker, and Kubernetes.
+              Scored 10/10 in the thesis defense.
+              "
+              ghLink = {
+                [
+                  { name: "Frontend", url: "https://gitlab.com/t9411/thesis-front-end" },
+                  { name: "Backend", url: "https://gitlab.com/t9411/annotation-system-backend" },
+                  { name: "AI model", url: "https://gitlab.com/t9411/yolov5-training-client" }
+                ]
+              }
+              demoLink="https://www.youtube.com/watch?v=-3xhzuiqaDs"
+              pdfLink="https://drive.google.com/file/d/10XorBi1RhzdGGk7aOUN3KnjCi_Vp2Qn5/view?usp=sharing"
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={zacingGame}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="Zacing Game"
+              description="A real-time online multiplayer racing game where each player controls a character in a maze and shoots to eliminate others. Developed entirely in Python for both client and server, featuring a server-based action broadcasting system and client-side event queues to ensure synchronized gameplay."
+              ghLink= {
+                [
+                  { name: "Frontend", url: "https://github.com/ndhp2000/DistributedSystem-02" },
+                  { name: "Backend", url: "https://github.com/ndhp2000/DistributedSystem02-Server" },
+                ]
+              }
+              demoLink="https://www.youtube.com/watch?v=qSl3rPBrddE"
             />
           </Col>
+
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={seamCarving}
+              isBlog={false}
+              title="Seam Carving on GPU"
+              description="Optimized Seam Carving (content-aware image resizing) on GPU using GMEM, CMEM, SMEM, and kernel pipelining, combined with a meet-in-the-middle trick — achieving ~2× speedup over the baseline parallel version."
+              ghLink="https://github.com/ktncktnc/PP-FinalProject/tree/master"
+            />
+          </Col>
+
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={llpHealth}
+              isBlog={false}
+              title="LLP Health"
+              description="Won First Prize at the NFQ Hackathon during the COVID-19 pandemic with an AI-powered Android fitness app that automatically counts exercise reps (push-ups, jumping jacks, squats) and includes tracking, reminders, and social sharing features."
+              ghLink="https://github.com/tronglocbrvt/HackathonNFQ"
+              demoLink="https://www.youtube.com/watch?v=TK2NjcmVjxs"
+            />
+          </Col>
+
+
+       
         </Row>
       </Container>
     </Container>

@@ -54,6 +54,7 @@ function Publication() {
           {publications.map((publication) => (
             <Col
               md={10}
+              title={"Click to view publication"}
               key={publication.id}
               className="publication-card"
               style={{
@@ -72,11 +73,15 @@ function Publication() {
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.transform = "translateY(-5px)";
-                e.currentTarget.style.boxShadow = "0 15px 40px rgba(13, 172, 98, 0.3)";
+                e.currentTarget.style.boxShadow = "0 10px 25px rgba(0, 255, 136, 0.2)";
+                e.currentTarget.style.borderWidth = "2px";
+                e.currentTarget.style.borderColor = "#00ff88";
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.transform = "translateY(0)";
                 e.currentTarget.style.boxShadow = "0 8px 32px rgba(13, 172, 98, 0.2)";
+                e.currentTarget.style.borderWidth = "1px";
+                e.currentTarget.style.borderColor = "#0dac62";
               }}
               onClick={() => window.open(publication.link, "_blank")}
             >
