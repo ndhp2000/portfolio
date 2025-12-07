@@ -13,7 +13,7 @@ function Dance() {
       }}>
         <span>My <strong className="main-name">Dance</strong></span>
         <a
-          href="https://www.instagram.com/tiny__camel/?hl=en"
+          href="https://www.instagram.com/camel________________/"
           target="_blank"
           rel="noopener noreferrer"
           style={{
@@ -36,7 +36,7 @@ function Dance() {
           margin: "0 auto"
         }}
       >
-        Follow me on Instagram!!!
+        Where logic meets movement!
       </p>
 
       <Row className="justify-content-center" style={{ paddingTop: "20px" }}>

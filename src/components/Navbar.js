@@ -9,7 +9,6 @@ import {
   AiOutlineThunderbolt,
 } from "react-icons/ai";
 
-import { CgFileDocument } from "react-icons/cg";
 import { MdArticle } from "react-icons/md";
 
 function NavBar() {
@@ -95,16 +94,6 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
             
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/resume"
-                onClick={() => updateExpanded(false)}
-                className={location.pathname === "/resume" ? "active-nav-link" : ""}
-              >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
-              </Nav.Link>
-            </Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Container>

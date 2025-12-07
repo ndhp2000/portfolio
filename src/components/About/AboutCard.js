@@ -7,7 +7,7 @@ function AboutCard() {
     <Card className="quote-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify" }}>
+          <p style={{ textAlign: "left" }}>
             Hi Everyone, I am <span className="purple">Nguyen Dinh Hoang Phuc </span>
             from <span className="purple"> Ho Chi Minh city, Vietnam.</span>
             <br />
@@ -22,7 +22,7 @@ function AboutCard() {
             I achieved <span className="purple">Second Prize</span> in the National Olympiad in Informatics and a <span className="purple">Silver Medal</span> in the ICPC Asia Regional.
             <br />
             <br />
-            Apart from programming, some other activities that I love to <span className="purple">dance!</span> (follow me on <a href="https://www.instagram.com/tiny__camel/?hl=en" target="_blank" rel="noreferrer" style={{ color: "#0dac62", textDecoration: "none" }}><AiFillInstagram style={{ fontSize: "1.2em", verticalAlign: "middle" }} /></a>)
+            Apart from programming, some other activities that I love to <span className="purple">dance!</span> (follow me on <a href="https://www.instagram.com/camel________________/" target="_blank" rel="noreferrer" style={{ color: "#0dac62", textDecoration: "none" }}><AiFillInstagram style={{ fontSize: "1.2em", verticalAlign: "middle" }} /></a>)
           </p>
           <p style={{ color: "rgb(155 126 172)" }}>
             "Think less, do more!"{" "}
