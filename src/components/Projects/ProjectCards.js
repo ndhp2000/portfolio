@@ -55,8 +55,19 @@ function ProjectCards(props) {
           </div>
         )}
         <Card.Title style={{ fontWeight: "bold" }}>{props.title}</Card.Title>
-        <Card.Text style={{ textAlign: "left" }}>
-          {props.description}
+        <Card.Text as="div" style={{ textAlign: "left" }}>
+          {Array.isArray(props.description) ? (
+            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
+              {props.description.map((point, index) => (
+                <li key={index} style={{ display: "flex", gap: "8px", alignItems: "flex-start", lineHeight: 1.45 }}>
+                  <span style={{ color: "#00ff88", fontWeight: 700, flexShrink: 0 }}>▹</span>
+                  <span>{point}</span>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            props.description
+          )}
         </Card.Text>
         
         <div style={{ textAlign: "center", marginTop: "15px", display: "flex", flexWrap: "nowrap", justifyContent: "center", gap: "10px" }}>

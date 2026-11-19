@@ -10,7 +10,7 @@ const ACCENT = "#00ff88";
 const cardStyle = {
     border: "1px solid #0d4d2e",
     borderRadius: "15px",
-    padding: "20px",
+    padding: "16px 20px",
     height: "100%",
     textAlign: "left",
     background: "rgba(0, 255, 136, 0.03)",
@@ -32,7 +32,7 @@ const cardLeadStyle = {
     color: "#ffffff",
     opacity: 0.75,
     fontSize: "0.95em",
-    marginBottom: "10px"
+    marginBottom: "8px"
 };
 
 const listStyle = {
@@ -41,12 +41,12 @@ const listStyle = {
     margin: 0,
     display: "flex",
     flexDirection: "column",
-    gap: "10px"
+    gap: "6px"
 };
 
 function Bullet({ children }) {
     return (
-        <li style={{ display: "flex", gap: "10px", alignItems: "flex-start", lineHeight: 1.5 }}>
+        <li style={{ display: "flex", gap: "10px", alignItems: "flex-start", lineHeight: 1.4 }}>
             <span style={{ color: ACCENT, fontWeight: 700, flexShrink: 0 }}>▹</span>
             <span>{children}</span>
         </li>
@@ -89,24 +89,24 @@ function Introduction() {
                     </p>
                 </Col>
 
-                <Col md={4} style={{ display: "flex", justifyContent: "center", alignItems: "center", padding: "20px" }}>
+                <Col md={4} style={{ display: "flex", justifyContent: "center", alignItems: "center", padding: "10px" }}>
                     <img
                         src={profileImage}
                         alt="Profile"
                         style={{
                             width: "100%",
-                            maxWidth: "230px",
+                            maxWidth: "190px",
                             height: "auto",
                             borderRadius: "10px",
                             boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
-                            marginTop: "30px"
+                            marginTop: "16px"
                         }}
                     />
                 </Col>
             </Row>
 
             {/* Why? — experience + academics */}
-            <Row style={{ padding: "0 10px", marginTop: "8px" }}>
+            <Row style={{ padding: "0 10px", marginTop: "4px" }}>
                 <Col xs={12}>
                     <h3
                         style={{
@@ -114,14 +114,15 @@ function Introduction() {
                             fontFamily: "'Space Grotesk', sans-serif",
                             fontWeight: 700,
                             color: "#ffffff",
-                            marginBottom: "12px"
+                            marginBottom: "8px",
+                            fontSize: "1.5em"
                         }}
                     >
                         Why?
                     </h3>
                 </Col>
 
-                <Col md={6} style={{ marginBottom: "16px" }}>
+                <Col md={6} style={{ marginBottom: "12px" }}>
                     <div style={cardStyle}>
                         <div style={cardTitleStyle}>
                             <MdBusinessCenter /> Software that ships
@@ -141,7 +142,7 @@ function Introduction() {
                     </div>
                 </Col>
 
-                <Col md={6} style={{ marginBottom: "16px" }}>
+                <Col md={6} style={{ marginBottom: "12px" }}>
                     <div style={cardStyle}>
                         <div style={cardTitleStyle}>
                             <FaGraduationCap /> Academic record
@@ -166,8 +167,8 @@ function Introduction() {
 
             {/* Closing + CTA */}
             <Row style={{ padding: "0 10px" }}>
-                <Col xs={12} style={{ textAlign: "left" }}>
-                    <p style={{ fontSize: "1.15em", lineHeight: 1.5, color: "#ffffff", marginBottom: "12px" }}>
+                <Col xs={12} style={{ textAlign: "left", display: "flex", flexWrap: "wrap", alignItems: "center", gap: "12px 24px" }}>
+                    <p style={{ fontSize: "1.1em", lineHeight: 1.5, color: "#ffffff", margin: 0, flex: "1 1 420px" }}>
                         Now, I want to put this experience and background to work building{" "}
                         {hl("products people need")}, and keep growing along the way.
                     </p>
@@ -181,7 +182,8 @@ function Introduction() {
                             borderRadius: "8px",
                             padding: "10px 22px",
                             fontWeight: 600,
-                            textDecoration: "none"
+                            textDecoration: "none",
+                            whiteSpace: "nowrap"
                         }}
                     >
                         Check out my projects →

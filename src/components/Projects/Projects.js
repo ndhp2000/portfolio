@@ -31,7 +31,11 @@ function Projects() {
               isBlog={false}
               company="SAP"
               title="Dependency Upgrade Agent"
-              description="An AI agent built from scratch with LangGraph and the Claude SDK (LLM, agentic workflow) that automates the end-to-end third-party dependency upgrade process across 100+ repositories of SAP SuccessFactors, making upgrades 10x faster."
+              description={[
+                "AI agent built from scratch with LangGraph and the Claude SDK",
+                "Automates end-to-end third-party dependency upgrades across 100+ SAP SuccessFactors repositories",
+                "Makes upgrades 10x faster",
+              ]}
               productLink="https://www.sap.com/products/hcm.html"
             />
           </Col>
@@ -42,7 +46,11 @@ function Projects() {
               isBlog={false}
               company="Anduin Transactions"
               title="Branded Landing Page"
-              description="A platform that enables general partners to create fully customizable web pages to showcase their brand, funds, and limited partner–specific content. It includes a page management dashboard, granular access control for limited partners, support for custom domains, and shareable page links. All customized pages are encoded and decoded using Protobuf and securely stored on Amazon S3."
+              description={[
+                "Lets general partners build fully customizable pages for their brand, funds and LP-specific content",
+                "Page management dashboard, granular LP access control, custom domains and shareable links",
+                "Pages encoded with Protobuf and stored securely on Amazon S3",
+              ]}
               productLink="https://anduintransact.com/solutions/anduin-engagement-hub"
             />
           </Col>
@@ -53,7 +61,11 @@ function Projects() {
               isBlog={false}
               company="Anduin Transactions"
               title="Investor Data Management"
-              description="The platform that centralizes all investor data to streamline subscriptions, automate compliance checks, and improve post-close interactions. I owned key parts of the system, including Contact Management, which allows General Partners to manage firm contacts and related entities such as contact matrices and investment entities, and Document Request, which provides workflows for requesting and tracking documents from Limited Partners. I developed complex logic for permissions and object relationships, and optimized dashboards to enhance both scalability and user experience."
+              description={[
+                "Centralizes investor data to streamline subscriptions, compliance checks and post-close work",
+                "Owned Contact Management (contacts, contact matrices, investment entities) and Document Request workflows",
+                "Built complex permission and relationship logic; optimized dashboards for scale and UX",
+              ]}
               productLink="https://anduintransact.com/solutions/anduin-investor-data-management"
             />
           </Col>
@@ -64,7 +76,11 @@ function Projects() {
               isBlog={false}
               company="Anduin Transactions"
               title="Investor Access"
-              description="An application for Limited Partners to manage their profiles (over 500 data points), documents, and investments, featuring streamlined workflows for quick fund subscriptions, submitting requested documents, and automatic data synchronization."
+              description={[
+                "Lets LPs manage profiles (500+ data points), documents and investments",
+                "Streamlined workflows for fund subscriptions and requested documents",
+                "Automatic data synchronization",
+              ]}
               productLink="https://anduintransact.com/solutions/anduin-investor-access"
             />
           </Col>
@@ -75,7 +91,11 @@ function Projects() {
               isBlog={false}
               award="Winner · NFQ Hackathon 2021"
               title="LLP Health"
-              description="An AI-powered Android fitness app built during the COVID-19 pandemic that automatically counts exercise reps (push-ups, jumping jacks, squats) and includes tracking, reminders, and social sharing features."
+              description={[
+                "AI-powered Android fitness app built during the COVID-19 pandemic",
+                "Automatically counts reps for push-ups, jumping jacks and squats",
+                "Tracking, reminders and social sharing",
+              ]}
               ghLink="https://github.com/tronglocbrvt/HackathonNFQ"
               demoLink="https://www.youtube.com/watch?v=TK2NjcmVjxs"
             />
@@ -86,9 +106,12 @@ function Projects() {
               imgPath={smartAnnotation}
               isBlog={false}
               title="Intelligent Annotation System With Semi Automatic Assistance"
-              description="An intelligent annotation system that leverages deep learning for semi-automatic object labeling, integrates a human-in-the-loop process to continuously improve model accuracy, and supports distributed computation through user-shared resources. Built with React, Go, and Python on a scalable microservice architecture using gRPC, Docker, and Kubernetes.
-              Scored 10/10 in the thesis defense.
-              "
+              description={[
+                "Deep-learning-assisted, semi-automatic object labeling",
+                "Human-in-the-loop training that keeps improving model accuracy, with distributed computation on user-shared resources",
+                "React, Go and Python microservices using gRPC, Docker and Kubernetes",
+                "Scored 10/10 in the thesis defense",
+              ]}
               ghLink = {
                 [
                   { name: "Frontend", url: "https://gitlab.com/t9411/thesis-front-end" },
@@ -107,7 +130,11 @@ function Projects() {
               imgPath={zacingGame}
               isBlog={false}
               title="Zacing Game"
-              description="A real-time online multiplayer racing game where each player controls a character in a maze and shoots to eliminate others. Developed entirely in Python for both client and server, featuring a server-based action broadcasting system and client-side event queues to ensure synchronized gameplay."
+              description={[
+                "Real-time online multiplayer maze racing and shooting game",
+                "Python client and server",
+                "Server-side action broadcasting and client-side event queues keep gameplay in sync",
+              ]}
               ghLink= {
                 [
                   { name: "Frontend", url: "https://github.com/ndhp2000/DistributedSystem-02" },
@@ -124,7 +151,11 @@ function Projects() {
               imgPath={seamCarving}
               isBlog={false}
               title="Seam Carving on GPU"
-              description="Optimized Seam Carving (content-aware image resizing) on GPU using GMEM, CMEM, SMEM, and kernel pipelining, combined with a meet-in-the-middle trick — achieving ~2× speedup over the baseline parallel version."
+              description={[
+                "Content-aware image resizing optimized on GPU",
+                "Uses GMEM, CMEM, SMEM, kernel pipelining and a meet-in-the-middle trick",
+                "~2× faster than the baseline parallel version",
+              ]}
               ghLink="https://github.com/ktncktnc/PP-FinalProject/tree/master"
             />
           </Col>
