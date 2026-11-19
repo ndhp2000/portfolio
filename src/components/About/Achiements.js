@@ -16,11 +16,31 @@ function Achievements() {
 
     const achievementsByYear = [
         {
+            year: "2026",
+            prizes: [
+                {
+                    title: "Erasmus Mundus Full Scholarship – <span style='color: #00ff88;'>M.Sc. EDISS</span>",
+                    description: "Fully funded scholarship (tuition + monthly stipend) for the M.Sc. in Engineering of Data-intensive Intelligent Software Systems (Aug 2026 – Present).<br/>One of only <b>8</b> recipients out of <b>1,133</b> applicants.",
+                    issuer: "European Union – Erasmus Mundus"
+                },
+                {
+                    title: "Middle Platform Engineer – <span style='color: #00ff88;'>SAP Vietnam</span>",
+                    description: "Mar 2026 – Jul 2026 · Built an AI agent from scratch with <b>LangGraph</b> and <b>Claude SDK</b> that automates third-party dependency upgrades across <b>100+</b> SAP SuccessFactors repositories, making upgrades <b>10x faster</b>.",
+                    issuer: "SAP Vietnam"
+                }
+            ]
+        },
+        {
             year: "2022",
             prizes: [
                 {
-                    title: "Graduate with rank second in the selective <a href='https://www.fit.hcmus.edu.vn/vn/Default.aspx?tabid=419' target='_blank' style='color:rgb(7, 171, 95); text-decoration: underline;' onclick='event.stopPropagation();'>Honor Program</a>",
-                    description: "GPA: <span style='color: #00ff88; font-weight: bold;'>3.86/4.0</span> - <span style='color: #00ff88; font-weight: bold;'>9.23/10</span> in the Honor Program<br/>(program for the top <strong>49</strong> best students in the Information Technology faculty)",
+                    title: "Full-stack Product Software Engineer – <span style='color: #00ff88;'>Anduin Transactions</span>",
+                    description: "Oct 2022 – Oct 2025 · US B2B SaaS for private markets. Owned end-to-end planning, full-stack and UI/UX work: a contact dashboard handling <b>~500k records</b> per fund, branded fund landing pages with custom domains and LP permissions, and document-request workflows.",
+                    issuer: "Anduin Transactions"
+                },
+                {
+                    title: "Graduate with rank SECOND in the selective <a href='https://www.fit.hcmus.edu.vn/vn/Default.aspx?tabid=419' target='_blank' style='color:rgb(7, 171, 95); text-decoration: underline;' onclick='event.stopPropagation();'>Honor Program</a>",
+                    description: "GPA: <span style='color: #00ff88; font-weight: bold;'>3.86/4.0</span> - <span style='color: #00ff88; font-weight: bold;'>9.23/10</span> in the Honor Program<br/>(a selective track admitting only the <b>top 49 </b> students over above 500 students of the 2018 intake)",
                     issuer: "Falcuty of Information Technology - VNU-HCMC",
                     pdf: academicPdf
                 }
@@ -72,7 +92,7 @@ function Achievements() {
                 },
                 {
                     title: "Vietnam National \"Student of Five Merits\"",
-                    description: "The prestigious award recognizing students with outstanding achievements in ethics, study, physical fitness, volunteering, and integration.  In 2021, <b>198</b> students were awarded this prize in Vietnam.",
+                    description: "The prestigious award recognizing students with outstanding achievements in ethics, study, physical fitness, volunteering, and integration.  In 2020, <b>198</b> students were awarded this prize in Vietnam.",
                     issuer: "Vietnam National Union of Student",
                     pdf: sv5tot2020
                 }
@@ -234,7 +254,8 @@ function Achievements() {
                                                     color: "#00ff88",
                                                     fontSize: "1.2em",
                                                     fontWeight: "bold",
-                                                    marginBottom: "10px"
+                                                    marginBottom: "10px",
+                                                    textAlign: "left"
                                                 }}
                                                 dangerouslySetInnerHTML={{ __html: prize.title }}
                                             />
@@ -245,7 +266,8 @@ function Achievements() {
                                                     fontSize: "0.95em",
                                                     lineHeight: "1.5",
                                                     marginBottom: "12px",
-                                                    opacity: 0.9
+                                                    opacity: 0.9,
+                                                    textAlign: "left"
                                                 }}
                                                 dangerouslySetInnerHTML={{ __html: prize.description }}
                                             />
@@ -254,7 +276,8 @@ function Achievements() {
                                                 style={{
                                                     display: "flex",
                                                     alignItems: "center",
-                                                    gap: "8px"
+                                                    gap: "8px",
+                                                    justifyContent: "flex-start"
                                                 }}
                                             >
                                                 <span
@@ -309,9 +332,9 @@ function Achievements() {
                     <div
                         style={{
                             backgroundColor: "rgba(20, 20, 25, 0.95)",
-                            border: "2px solid #00ff88",
+                            border: "1px solid #00ff88",
                             borderRadius: "15px",
-                            padding: "20px",
+                            padding: "30px",
                             width: "80vw",
                             height: "95vh",
                             position: "relative",
@@ -331,29 +354,38 @@ function Achievements() {
                                 background: "transparent",
                                 border: "none",
                                 color: "#00ff88",
-                                fontSize: "24px",
+                                fontSize: "20px",
                                 fontWeight: "bold",
                                 cursor: "pointer",
                                 zIndex: 10000,
-                                padding: "5px 10px",
-                                borderRadius: "50%",
+                                padding: "6px",
+                                borderRadius: "6px",
+                                width: "32px",
+                                height: "32px",
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
                                 transition: "all 0.3s ease"
                             }}
                             onMouseEnter={(e) => {
                                 e.target.style.backgroundColor = "rgba(0, 255, 136, 0.2)";
-                                e.target.style.transform = "scale(1.1)";
+                                e.target.style.transform = "scale(1.05)";
+                                e.target.style.border = "1px solid rgba(0, 255, 136, 0.3)";
+                                e.target.style.borderRadius = "6px";
                             }}
                             onMouseLeave={(e) => {
                                 e.target.style.backgroundColor = "transparent";
                                 e.target.style.transform = "scale(1)";
+                                e.target.style.border = "none";
+                                e.target.style.borderRadius = "6px";
                             }}
                         >
                             ×
                         </button>
 
                         {/* Modal Content */}
-                        <div style={{ textAlign: "center", flex: 1, display: "flex", flexDirection: "column" }}>
-                            <h3 style={{ color: "#00ff88", marginBottom: "20px", fontSize: "1.8em", flexShrink: 0 }}>
+                        <div style={{ textAlign: "left", flex: 1, display: "flex", flexDirection: "column" }}>
+                            <h3 style={{ color: "#00ff88", marginBottom: "20px", fontSize: "1.8em", flexShrink: 0, textAlign: "left" }}>
                                 Achievement Document
                             </h3>
                             <iframe
@@ -361,9 +393,8 @@ function Achievements() {
                                 style={{
                                     width: "100%",
                                     flex: 1,
-                                    border: "2px solid #00ff88",
+                                    border: "none",
                                     borderRadius: "10px",
-                                    boxShadow: "0 4px 15px rgba(0, 255, 136, 0.3)",
                                     minHeight: "0"
                                 }}
                                 title={modalTitle}

@@ -73,7 +73,7 @@ function Publication() {
               }}
               onMouseEnter={(e) => {
                 e.currentTarget.style.transform = "translateY(-5px)";
-                e.currentTarget.style.boxShadow = "0 10px 25px rgba(0, 255, 136, 0.2)";
+                e.currentTarget.style.boxShadow = "0 5px 15px rgba(0, 255, 136, 0.15)";
                 e.currentTarget.style.borderWidth = "2px";
                 e.currentTarget.style.borderColor = "#00ff88";
               }}
@@ -83,7 +83,14 @@ function Publication() {
                 e.currentTarget.style.borderWidth = "1px";
                 e.currentTarget.style.borderColor = "#0dac62";
               }}
-              onClick={() => window.open(publication.link, "_blank")}
+              onClick={() => {
+                try {
+                  // Always open in new tab, never navigate current tab
+                  window.open(publication.link, "_blank", "noopener,noreferrer");
+                } catch (error) {
+                  console.error("Error opening publication link:", error);
+                }
+              }}
             >
               <Row style={{ width: "100%", margin: 0, minHeight: "300px" }}>
                 {/* Image Column */}
@@ -110,19 +117,20 @@ function Publication() {
                 </Col>
 
                 {/* Details Column */}
-                <Col md={8} style={{ padding: "25px", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
-                  <div>
+                <Col md={8} style={{ padding: "25px", display: "flex", flexDirection: "column", justifyContent: "center" }}>
+                  <div style={{ textAlign: "left" }}>
                     <h3 style={{
                       color: "white",
                       fontSize: "1.3em",
                       fontWeight: "bold",
                       marginBottom: "15px",
-                      lineHeight: "1.3"
+                      lineHeight: "1.3",
+                      textAlign: "left"
                     }}>
                       {publication.title}
                     </h3>
 
-                    <div style={{ marginBottom: "12px" }}>
+                    <div style={{ marginBottom: "12px", textAlign: "left" }}>
                       <span style={{ color: "#0dac62", fontSize: "0.9em", marginRight: "20px" }}>
                         <FaCalendarAlt style={{ marginRight: "8px" }} />
                         {publication.date}
@@ -138,7 +146,8 @@ function Publication() {
                       fontSize: "0.9em",
                       opacity: 0.9,
                       marginBottom: "15px",
-                      fontStyle: "italic"
+                      fontStyle: "italic",
+                      textAlign: "left"
                     }}>
                       <FaUserEdit style={{ marginRight: "8px", color: "#0dac62" }} />
                       {publication.authors}
@@ -150,7 +159,8 @@ function Publication() {
                       fontSize: "1em",
                       lineHeight: "1.6",
                       marginBottom: "0",
-                      opacity: 0.9
+                      opacity: 0.9,
+                      textAlign: "left"
                     }}>
                       {publication.summary}
                     </p>

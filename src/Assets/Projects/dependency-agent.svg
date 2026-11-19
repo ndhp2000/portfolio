@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" font-family="Helvetica, Arial, sans-serif">
+  <rect width="640" height="400" rx="16" fill="#101418"/>
+  <g stroke="#0dac62" stroke-width="2" fill="none" opacity="0.55">
+    <path d="M320 200 L130 90"/><path d="M320 200 L130 200"/><path d="M320 200 L130 310"/>
+    <path d="M320 200 L510 90"/><path d="M320 200 L510 200"/><path d="M320 200 L510 310"/>
+  </g>
+  <g fill="#14201a" stroke="#0dac62" stroke-width="2">
+    <rect x="60" y="68" width="140" height="44" rx="8"/><rect x="60" y="178" width="140" height="44" rx="8"/><rect x="60" y="288" width="140" height="44" rx="8"/>
+    <rect x="440" y="68" width="140" height="44" rx="8"/><rect x="440" y="178" width="140" height="44" rx="8"/><rect x="440" y="288" width="140" height="44" rx="8"/>
+  </g>
+  <g fill="#cfe9dc" font-size="15" text-anchor="middle">
+    <text x="130" y="95">repo · v1.2 → 1.4</text><text x="130" y="205">repo · v3.0 → 3.2</text><text x="130" y="315">repo · v0.9 → 1.0</text>
+    <text x="510" y="95">✓ upgraded</text><text x="510" y="205">✓ tests pass</text><text x="510" y="315">✓ PR opened</text>
+  </g>
+  <circle cx="320" cy="200" r="62" fill="#0b2a1c" stroke="#00ff88" stroke-width="3"/>
+  <text x="320" y="196" fill="#00ff88" font-size="22" font-weight="bold" text-anchor="middle">AI Agent</text>
+  <text x="320" y="220" fill="#8fd9b4" font-size="13" text-anchor="middle">LangGraph · Claude</text>
+  <text x="320" y="375" fill="#00ff88" font-size="18" font-weight="bold" text-anchor="middle">100+ repositories · 10x faster upgrades</text>
+</svg>

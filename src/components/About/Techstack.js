@@ -1,37 +1,63 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
+import { 
+  FaCode, 
+  FaLaptopCode, 
+  FaServer, 
+  FaDatabase, 
+  FaTools, 
+  FaPalette,
+  FaRobot,
+  FaEye,
+  FaSitemap
+} from "react-icons/fa";
 
 function Techstack() {
   const techCategories = [
     {
       title: "Programming Languages",
-      icon: ">_",
-      skills: ["Scala", "C++", "Python"]
+      icon: FaCode,
+      skills: ["Scala", "C++", "Python", "Java"]
     },
     {
-      title: "Frontend Development", 
-      icon: "🧩",
-      skills: ["Scala.js", "Laminar", "React"]
+      title: "Generative AI",
+      icon: FaRobot,
+      skills: ["LLMs", "AI Agents", "Agentic Software Development", "LangGraph", "Claude SDK", "Workflow Automation"]
     },
     {
       title: "Backend Development",
-      icon: "</>",
-      skills: ["ZIO", "ZIO HTTP", "Temporal", "Django"]
+      icon: FaServer,
+      skills: ["ZIO", "ZIO HTTP", "REST APIs", "Temporal", "Django", "System Integration"]
+    },
+    {
+      title: "Frontend Development",
+      icon: FaLaptopCode,
+      skills: ["Scala.js", "Laminar", "React", "UI/UX Development"]
     },
     {
       title: "Databases & Storage",
-      icon: "🗄️",
+      icon: FaDatabase,
       skills: ["FoundationDB", "Kafka", "MySQL"]
     },
     {
       title: "Tools & Technologies",
-      icon: "⚙️",
-      skills: [ "Git", "AWS"]
+      icon: FaTools,
+      skills: ["Git", "AWS", "Docker", "Linux/Unix", "CI/CD Pipelines"]
+    },
+    {
+      title: "Computer Vision",
+      icon: FaEye,
+      skills: ["Object Detection", "Retrieval", "Segmentation", "3 Published Papers"]
+    },
+    {
+      title: "Fundamentals",
+      icon: FaSitemap,
+      skills: ["Data Structures & Algorithms", "Operating Systems", "Databases", "Computer Networks", "Software Design"]
     },
     {
       title: "Workflow & Design",
-      icon: "🎨",
-      skills: ["Agile/Scrum", "System Design", "Architecture"]
+      icon: FaPalette,
+      skills: ["Agile/Scrum", "System Design", "Architecture", "Performance Optimization", "Troubleshooting", "End-to-end Ownership", "Product Mindset"]
     }
   ];
 
@@ -50,21 +76,26 @@ function Techstack() {
                 boxShadow: "0 8px 32px rgba(23, 225, 131, 0.2)"
               }}
               onMouseEnter={(e) => {
-                e.target.style.transform = "translateY(-5px)";
+                e.currentTarget.style.transform = "translateY(-5px)";
               }}
               onMouseLeave={(e) => {
-                e.target.style.transform = "translateY(0)";
+                e.currentTarget.style.transform = "translateY(0)";
               }}
             >
-              <div style={{ textAlign: "center", marginBottom: "20px" }}>
+              <div style={{ textAlign: "center", marginBottom: "20px", height: "100px", display: "flex", flexDirection: "column", justifyContent: "center", gap: "5px" }}>
                 <div 
                   style={{ 
-                    fontSize: "2.5em", 
+                    fontSize: "1.8em", 
                     color: "#0dac62", 
-                    marginBottom: "10px",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    width: "50px",
+                    height: "50px",
+                    margin: "0 auto"
                   }}
                 >
-                  {category.icon}
+                  <category.icon style={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center" }} />
                 </div>
                 <h3 
                   style={{ 
@@ -72,7 +103,11 @@ function Techstack() {
                     fontSize: "1.2em",
                     fontWeight: "bold",
                     marginBottom: "0",
-                    textShadow: "0 0 10px rgba(13, 172, 98, 0.3)"
+                    textShadow: "0 0 10px rgba(13, 172, 98, 0.3)",
+                    height: "40px",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center"
                   }}
                 >
                   {category.title}

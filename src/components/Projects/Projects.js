@@ -10,6 +10,7 @@ import zacingGame from "../../Assets/Projects/zacing-game.png";
 import seamCarving from "../../Assets/Projects/seam-carving.jpeg";
 import smartAnnotation from "../../Assets/Projects/smart-annotation.png";
 import llpHealth from "../../Assets/Projects/llphealth.png";
+import dependencyAgent from "../../Assets/Projects/dependency-agent.svg";
 
 function Projects() {
   return (
@@ -23,14 +24,25 @@ function Projects() {
           Here are a few projects I've worked on.
         </p>
 
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Row style={{ justifyContent: "flex-start" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={dependencyAgent}
+              isBlog={false}
+              company="SAP"
+              title="Dependency Upgrade Agent"
+              description="An AI agent built from scratch with LangGraph and the Claude SDK (LLM, agentic workflow) that automates the end-to-end third-party dependency upgrade process across 100+ repositories of SAP SuccessFactors, making upgrades 10x faster."
+              productLink="https://www.sap.com/products/hcm.html"
+            />
+          </Col>
+
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={brandedLandingPage}
               isBlog={false}
+              company="Anduin Transactions"
               title="Branded Landing Page"
               description="A platform that enables general partners to create fully customizable web pages to showcase their brand, funds, and limited partner–specific content. It includes a page management dashboard, granular access control for limited partners, support for custom domains, and shareable page links. All customized pages are encoded and decoded using Protobuf and securely stored on Amazon S3."
-              demoLink="https://anduin.helpjuice.com/en_US/branded-landing-page/page-inspiration-guide-build-content-that-serves-your-different-needs"
               productLink="https://anduintransact.com/solutions/anduin-engagement-hub"
             />
           </Col>
@@ -39,9 +51,9 @@ function Projects() {
             <ProjectCard
               imgPath={investorDataManagement}
               isBlog={false}
+              company="Anduin Transactions"
               title="Investor Data Management"
               description="The platform that centralizes all investor data to streamline subscriptions, automate compliance checks, and improve post-close interactions. I owned key parts of the system, including Contact Management, which allows General Partners to manage firm contacts and related entities such as contact matrices and investment entities, and Document Request, which provides workflows for requesting and tracking documents from Limited Partners. I developed complex logic for permissions and object relationships, and optimized dashboards to enhance both scalability and user experience."
-              demoLink="https://anduin.helpjuice.com/en_US/investor-data-management/set-up-a-contact-matrix-across-entities-vehicles"
               productLink="https://anduintransact.com/solutions/anduin-investor-data-management"
             />
           </Col>
@@ -50,9 +62,22 @@ function Projects() {
             <ProjectCard
               imgPath={investorAccess}
               isBlog={false}
+              company="Anduin Transactions"
               title="Investor Access"
               description="An application for Limited Partners to manage their profiles (over 500 data points), documents, and investments, featuring streamlined workflows for quick fund subscriptions, submitting requested documents, and automatic data synchronization."
               productLink="https://anduintransact.com/solutions/anduin-investor-access"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={llpHealth}
+              isBlog={false}
+              award="Winner · NFQ Hackathon 2021"
+              title="LLP Health"
+              description="An AI-powered Android fitness app built during the COVID-19 pandemic that automatically counts exercise reps (push-ups, jumping jacks, squats) and includes tracking, reminders, and social sharing features."
+              ghLink="https://github.com/tronglocbrvt/HackathonNFQ"
+              demoLink="https://www.youtube.com/watch?v=TK2NjcmVjxs"
             />
           </Col>
 
@@ -105,16 +130,6 @@ function Projects() {
           </Col>
 
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={llpHealth}
-              isBlog={false}
-              title="LLP Health"
-              description="Won First Prize at the NFQ Hackathon during the COVID-19 pandemic with an AI-powered Android fitness app that automatically counts exercise reps (push-ups, jumping jacks, squats) and includes tracking, reminders, and social sharing features."
-              ghLink="https://github.com/tronglocbrvt/HackathonNFQ"
-              demoLink="https://www.youtube.com/watch?v=TK2NjcmVjxs"
-            />
-          </Col>
 
 
        

@@ -26,7 +26,7 @@ function About() {
             margin: "0 auto"
           }}
         >
-          Skills I've acquired over 3.5 years of experience in software development.
+          Skills I've acquired over 4 years of experience in software development.
         </p>
         <Techstack />
         <Dance />

@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import goEuropeDay from "../../Assets/Activities/go-europe.pdf";
 import vsss from "../../Assets/Activities/vsss.pdf";
 import traoDoiSinhVien from "../../Assets/Activities/trao-doi-sinh-vien.pdf";
+import pima from "../../Assets/Activities/pima.pdf";
 
 function ActivityList() {
     const [modalShow, setModalShow] = useState(false);
@@ -14,6 +15,7 @@ function ActivityList() {
             title: "Organizer at Project in Mathematics and Applications (PiMA)",
             description: "Organized seminars at high schools, wrote educational blog posts for the PiMA fanpage, and served as both organizer and mentor at the PiMA Summer Camp 2021.",
             referenceUrl: "https://pimavn.github.io/",
+            pdf: pima
         },
         {
             title: "Attendant at Vietnam Summer School of Science",
@@ -175,9 +177,9 @@ function ActivityList() {
                     <div
                         style={{
                             backgroundColor: "rgba(20, 20, 25, 0.95)",
-                            border: "2px solid #00ff88",
+                            border: "1px solid #00ff88",
                             borderRadius: "15px",
-                            padding: "20px",
+                            padding: "30px",
                             width: "80vw",
                             height: "95vh",
                             position: "relative",
@@ -197,29 +199,38 @@ function ActivityList() {
                                 background: "transparent",
                                 border: "none",
                                 color: "#00ff88",
-                                fontSize: "24px",
+                                fontSize: "20px",
                                 fontWeight: "bold",
                                 cursor: "pointer",
                                 zIndex: 10000,
-                                padding: "5px 10px",
-                                borderRadius: "50%",
+                                padding: "6px",
+                                borderRadius: "6px",
+                                width: "32px",
+                                height: "32px",
+                                display: "flex",
+                                alignItems: "center",
+                                justifyContent: "center",
                                 transition: "all 0.3s ease"
                             }}
                             onMouseEnter={(e) => {
                                 e.target.style.backgroundColor = "rgba(0, 255, 136, 0.2)";
-                                e.target.style.transform = "scale(1.1)";
+                                e.target.style.transform = "scale(1.05)";
+                                e.target.style.border = "1px solid rgba(0, 255, 136, 0.3)";
+                                e.target.style.borderRadius = "6px";
                             }}
                             onMouseLeave={(e) => {
                                 e.target.style.backgroundColor = "transparent";
                                 e.target.style.transform = "scale(1)";
+                                e.target.style.border = "none";
+                                e.target.style.borderRadius = "6px";
                             }}
                         >
                             ×
                         </button>
 
                         {/* Modal Content */}
-                        <div style={{ textAlign: "center", flex: 1, display: "flex", flexDirection: "column" }}>
-                            <h3 style={{ color: "#00ff88", marginBottom: "20px", fontSize: "1.8em", flexShrink: 0 }}>
+                        <div style={{ textAlign: "left", flex: 1, display: "flex", flexDirection: "column" }}>
+                            <h3 style={{ color: "#00ff88", marginBottom: "20px", fontSize: "1.8em", flexShrink: 0, textAlign: "left" }}>
                                 Activity Document
                             </h3>
                             <iframe
@@ -227,9 +238,8 @@ function ActivityList() {
                                 style={{
                                     width: "100%",
                                     flex: 1,
-                                    border: "2px solid #00ff88",
+                                    border: "none",
                                     borderRadius: "10px",
-                                    boxShadow: "0 4px 15px rgba(0, 255, 136, 0.3)",
                                     minHeight: "0"
                                 }}
                                 title={modalTitle}
